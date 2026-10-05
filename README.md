@@ -1,4 +1,4 @@
-# Parking Lot System — Java OOP
+# Java Parking Lot System — OOP, Spot Allocation & Fees
 
 [![Java](https://img.shields.io/badge/Java-OOP-ED8B00?logo=openjdk&logoColor=white)](https://www.java.com/)
 [![Stars](https://img.shields.io/github/stars/AlakhiarovSalekh/Parking-Lot-System?style=social)](https://github.com/AlakhiarovSalekh/Parking-Lot-System/stargazers)
