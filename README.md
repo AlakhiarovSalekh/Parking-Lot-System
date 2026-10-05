@@ -73,6 +73,12 @@ The system calculates the parking duration from the recorded entry time and appl
 
 Issues and focused pull requests are welcome for correctness, tests, documentation, and design improvements.
 
+## More Projects by Salekh
+
+- [University Room Booking Application](https://github.com/AlakhiarovSalekh/University-Room-Booking-Application) — Java Swing/MVC booking system.
+- [Marks Manager](https://github.com/AlakhiarovSalekh/Marks-Manager) — Java marks-management app with console and GUI interfaces.
+- [ATM System C++](https://github.com/AlakhiarovSalekh/ATM-System-CPP) — banking/ATM system-design implementations.
+
 ## Author
 
 **Salekh Alakhiarov** · [GitHub](https://github.com/AlakhiarovSalekh)
