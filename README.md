@@ -73,6 +73,8 @@ The system calculates the parking duration from the recorded entry time and appl
 
 Issues and focused pull requests are welcome for correctness, tests, documentation, and design improvements.
 
+> If this project is useful to you, consider starring the repository. It helps you find it again and helps other developers discover the project.
+
 ## More Projects by Salekh
 
 - [University Room Booking Application](https://github.com/AlakhiarovSalekh/University-Room-Booking-Application) — Java Swing/MVC booking system.
