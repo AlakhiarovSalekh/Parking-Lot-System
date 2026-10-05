@@ -1,40 +1,23 @@
-# 🚗 Parking Lot System in Java
+# Parking Lot System — Java OOP
 
-An **advanced, console-based Parking Lot System** built using **Java and Object-Oriented Programming (OOP)** principles.  
-This project simulates a real-world parking lot with **time-based parking fees**, **different parking spot sizes**, and **fast vehicle lookup using HashMap**.
+[![Java](https://img.shields.io/badge/Java-OOP-ED8B00?logo=openjdk&logoColor=white)](https://www.java.com/)
+[![Stars](https://img.shields.io/github/stars/AlakhiarovSalekh/Parking-Lot-System?style=social)](https://github.com/AlakhiarovSalekh/Parking-Lot-System/stargazers)
 
-Perfect for **Java beginners → intermediate learners**, **college mini-projects**, and **interview preparation**.
+A console-based parking lot simulation built with Java and object-oriented design. It models vehicles, parking spot sizes, automatic allocation, entry time tracking, and time-based parking fees.
 
----
+## Features
 
-## ✨ Features
+- Park and remove vehicles
+- Bike and car vehicle types
+- Small, medium, and large parking spots
+- Automatic spot allocation based on vehicle size
+- Entry-time tracking with `LocalDateTime`
+- Time-based fee calculation
+- Fast vehicle lookup with `HashMap`
 
-✅ Park and remove vehicles  
-✅ Parking fee calculation based on parking duration  
-✅ Time tracking using `LocalDateTime`  
-✅ Supports different vehicle types (Bike, Car)  
-✅ Different parking spot sizes (SMALL, MEDIUM, LARGE)  
-✅ Automatic spot allocation based on vehicle size  
-✅ Fast O(1) vehicle lookup using `HashMap`  
-✅ Clean, scalable OOP design  
+## OOP Design
 
----
-
-## 🧠 System Design (OOP)
-
-### Core Components
-- **Vehicle (Abstract Class)**
-- **Car, Bike (Inheritance)**
-- **ParkingSpot**
-- **ParkingLot**
-- **Enums** for type safety
-- **Main** (Driver class)
-
----
-
-## 🏗️ Class Diagram (Logical)
-
-```
+```text
 Vehicle (abstract)
 ├── Bike
 └── Car
@@ -49,82 +32,47 @@ ParkingSpot
 └── EntryTime
 ```
 
----
+The project demonstrates abstraction, inheritance, encapsulation, enums, collections, and date/time calculations.
 
-## 📦 Technologies Used
+## Repository Structure
 
-- Java (JDK 8+)
-- OOP Concepts
-- Collections Framework
-- Date & Time API
-
----
-
-## 🧩 Concepts Covered
-
-- Abstraction
-- Inheritance
-- Polymorphism
-- Encapsulation
-- Enums
-- HashMap
-- Time-based calculations
-- Real-world system design
-
----
-
-## 🚀 How It Works
-
-1. Vehicle arrives at parking lot
-2. System finds a suitable parking spot based on size
-3. Entry time is recorded
-4. Vehicle is stored in a HashMap for fast access
-5. On exit:
-   - Parking duration is calculated
-   - Fee is generated
-   - Spot is freed
-
----
-
-## 💰 Parking Fee Logic
-
-- Minimum charge: **1 hour**
-- Fee calculation:
-      Parking Fee = Hours Parked × Rate per Hour
-- Uses `Duration.between(entryTime, exitTime)`
-
----
-
-## ▶️ How to Run
-
-1. Clone the repository
- ```bash
- git clone https://github.com/AlakhiarovSalekh/Parking-Lot-System.git
+```text
+Bike.java
+Car.java
+Main.java
+ParkingLot.java
+ParkingSpot.java
+SpotSize.java
+Vehicle.java
+VehicleType.java
 ```
-2. Open in IDE (IntelliJ / Eclipse / VS Code)
-3. Compile and run Main.java
 
----
+## Run Locally
 
-## 📂 Project Structure
-
-```css
-src/
- ├── Bike.java
- ├── Car.java
- ├── Vehicle.java
- ├── ParkingSpot.java
- ├── ParkingLot.java
- ├── SpotSize.java
- ├── VehicleType.java
- └── Main.java
+```bash
+git clone https://github.com/AlakhiarovSalekh/Parking-Lot-System.git
+cd Parking-Lot-System
+javac *.java
+java Main
 ```
----
-## 🔮 Future Enhancements
 
-- Multi-floor parking lot
-- Dynamic pricing (weekend/night rates)
+## Parking Fee Logic
+
+The system calculates the parking duration from the recorded entry time and applies an hourly rate, with a minimum billable duration of one hour.
+
+## Possible Extensions
+
+- Multi-floor parking
+- Dynamic pricing
 - Parking tickets
-- Database integration
-- REST API using Spring Boot
-- Unit tests (JUnit)
+- Database persistence
+- REST API
+- Automated tests
+
+## Contributing
+
+Issues and focused pull requests are welcome for correctness, tests, documentation, and design improvements.
+
+## Author
+
+**Salekh Alakhiarov** · [GitHub](https://github.com/AlakhiarovSalekh)
